@@ -11,10 +11,10 @@
 
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="text-primary">All Students</h2>
+        <h2 class="text-primary">{{ user.username|title }}</h2>
         <div>
-            <a href="/add/" class="btn btn-success">Add Student</a>
-            {% comment %} <a href="/add_marks/" class="btn btn-warning">Add Marks</a> {% endcomment %}
+            <a href="/add/" class="btn btn-success">Add Details</a>
+            <a href="/logout/" class="btn btn-danger ">Logout</a>
         </div>
     </div>
     <form method="get" class="mb-4">
